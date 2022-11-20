@@ -42,4 +42,112 @@
             }
         }
     }
+    
+    .first-block {
+        max-height: 675px;
+
+        &__text {
+            max-width: 987px;
+        }
+    }
+    
+    .about { 
+        min-height: 780px;
+
+        &-right {
+            width: 45%;
+        }
+
+        &-left {
+            width: 55%;
+            padding: 0 60px 0 140px;
+        }
+
+        &__text {
+            max-width: 100%;
+        }
+
+        .title--h2 {
+            font-size: 36px;
+            margin-bottom: 24px;
+        }
+    
+        &__description {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    .services {
+        max-height: 590px;
+    }
+
+    .partners {
+        padding-top: 130px;
+        padding-bottom: 130px;
+
+        .title--h2 {
+            font-size: 40px;
+            margin-bottom: 68px;
+        }
+    
+        .partners-list {
+            &__item {
+                height: 276px;
+                width: 224px;
+                margin-right: 8px;
+
+                svg {
+                    width: 145px;
+                    height: 145px;
+                }
+    
+                img {
+                    width: 145px;
+                    height: 145px;
+                }
+            }
+        }
+    }
+    
+    .reviews {
+        .container {
+            padding: 0 60px;
+        }
+
+        padding: 80px 0;
+    
+        .title--h2 {
+            font-size: 36px;
+            margin-bottom: 84px;
+        }
+    
+        &-item {
+            width: 484px;
+            margin-bottom: 60px;
+        }
+    }
+
+    .feedback {
+        &__text {
+            margin-bottom: 44px;
+        }
+    
+        .title--h2 {
+            font-size: 40px;
+            margin-bottom: 24px;
+        }
+    
+        &__description {
+            font-size: 26px;
+        }
+    
+        &-form {
+            &__item {
+                input {
+                    width: 285px;
+                }
+            }
+        }
+    }
 }

@@ -42,6 +42,162 @@
             }
         }
     }
+    
+    .first-block {
+        // height: calc(322px + (631 - 322) * ((100vw - 768px) / (1024 - 768)));
+
+        &__text {
+            max-width: 390px;
+        }
+    
+        .title--h1 {
+            margin: 0 0 20px;
+            font-size: 18px;
+        }
+    
+        &__description {
+            font-size: 14px;
+        }
+    }
+
+    .about { 
+        min-height: 449px;
+        
+        &-left {
+            width: 45%;
+        }
+
+        &-right {
+            width: 55%;
+        }
+    }
+
+    .services {
+        &__text {
+            max-width: 370px;
+        }
+
+        .title--h2 {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .services-list {
+            .services-list__item {
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .partners {
+        padding-top: 44px;
+        padding-bottom: 65px;
+
+        .title--h2 {
+            font-size: 16px;
+            margin-bottom: 28px;
+        }
+    
+        .partners-list {
+            &__item {
+                height: 123px;
+                width: 112px;
+
+                svg {
+                    width: 60px;
+                    height: 60px;
+                }
+    
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+
+    .reviews {
+        padding: 44px 30px;
+    
+        .title--h2 {
+            font-size: 16px;
+            margin-bottom: 18px;
+        }
+    
+        &__list {
+            width: 580px;
+            margin-bottom: 44px;
+        }
+    
+        &-item {
+            width: 240px;
+            margin-bottom: 40px;
+
+            &__info {
+                margin-bottom: 11px;
+            }
+    
+            &__name {
+                font-size: 14px;
+                font-weight: 400;
+                margin-right: 10px;
+            }
+    
+            &__text {
+                font-size: 12px;
+                line-height: 1.2;
+            }
+
+            &__stars {
+                margin-top: -3px;
+                svg {
+                    width: 13px;
+                    height: 13px;
+                }
+            }
+        }
+
+        &__link {
+            a {
+                padding: 11px 13px 9px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .feedback {
+        min-height: 326px;
+
+        &__text {
+            margin-bottom: 17px;
+            max-width: 100%;
+        }
+    
+        .title--h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    
+        &__description {
+            font-size: 14px;
+        }
+    
+        &-form {
+    
+            &__item {
+                margin-right: 16px;
+    
+                input {
+                    width: 110px;
+                }
+            }
+
+            &__button {
+                width: 110px;
+            }
+        }
+    }
 
     .footer {
         background-size: contain;

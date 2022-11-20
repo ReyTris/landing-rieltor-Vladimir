@@ -1,0 +1,133 @@
+@media (min-width: 480px) {
+    .about { 
+    
+        &-left {
+            padding: 0 28px ;
+        }
+
+        &__text {
+            max-width: 263px;
+        }
+
+        .title--h2 {
+            font-size: 16px;
+        }
+    
+        &__description {
+            font-size: 14px;
+            line-height: 1.2;
+        }
+    }
+
+    .partners {
+        padding-top: 33px;
+        padding-bottom: 55px;
+
+        .title--h2 {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    
+        .partners-list {
+    
+            &__item {
+                height: 103px;
+                width: 83px;
+
+                svg {
+                    width: 50px;
+                    height: 50px;
+                }
+    
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+
+    .reviews {
+        padding: 33px 23px;
+    
+        .title--h2 {
+            margin-bottom: 16px;
+        }
+    
+        &__list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 440px;
+            margin: 0 auto; 
+            margin-bottom: 20px;
+        }
+    
+        &-item {
+            width: 200px;
+            margin-bottom: 30px;
+
+            &:nth-of-type(n+2) {
+                margin-bottom: 0;
+            }
+    
+            &__info {
+                margin-bottom: 5px;
+            }
+    
+            &__name {
+                font-size: 12px;
+                font-weight: 400;
+                margin-right: 7px;
+            }
+    
+            &__text {
+                font-size: 12px;
+            }
+            
+        }
+    }
+
+    .feedback {
+        min-height: 248px;
+
+        &__text {
+            margin-bottom: 17px;
+            max-width: 100%;
+        }
+    
+        .title--h2 {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+    
+        &__description {
+            font-size: 12px;
+        }
+    
+        &-form {
+
+            &__wrapper {
+                flex-direction: row;
+            }
+    
+            &__item {
+                margin-bottom: 0;
+                margin-right: 15px;
+    
+                input {
+                    font-size: 12px;
+                    padding: 9px;
+                    color: #fff;
+                    width: 100px;
+                }
+            }
+
+            &__button {
+                width: 100px;
+            }
+        }
+    }
+}
