@@ -8,9 +8,13 @@
 @import "./components/header";
 
 // тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
+.main {
+  overflow-x: hidden;
+  flex: 1 0 auto;
+  height: 100%;
 }
+
+@import "mobile";
+@import "laptop";
+@import "desktop";
+@import "desktop-bg";

@@ -1,0 +1,66 @@
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 26px;
+    }
+
+    .header {
+
+        &__wrapper {
+            padding: 40px 0;
+        }
+        .person {
+            &__name {
+                font-size: 20px;
+            }
+        }
+    
+        &__info {
+            .social-list {
+                margin-left: -25px;
+    
+                .social-link {
+                    width: 30px;
+                    margin-left: 25px;
+                }
+            }
+        }
+
+        &__phone {
+            font-size: 20px;
+        }
+    }
+
+   .footer {
+        padding: 100px 0 123px;
+
+        &__contacts {
+            margin-bottom: 57px;
+
+            .footer__title {
+                font-size: 20px;
+                margin-bottom: 13px;
+            }
+
+            .footer__phone,
+            .footer__email {
+                font-size: 40px;
+                margin-bottom: 12px;
+            }
+
+        }
+
+        &__social {
+            &--title {
+                font-size: 20px;
+                margin-bottom: 29px;
+            }
+            .social-list {
+                .social-link {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+
+}
