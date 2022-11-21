@@ -44,7 +44,7 @@
     }
     
     .first-block {
-        max-height: 675px;
+        max-height: calc(100vh - 121px);
 
         &__text {
             max-width: 987px;
