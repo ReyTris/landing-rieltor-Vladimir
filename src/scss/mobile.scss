@@ -45,7 +45,7 @@
 }
 
 .first-block {
-    // padding: 44px 26px;
+    padding: 20px;
     text-align: center;
     position:  relative;
     display: flex;
@@ -81,7 +81,6 @@
     &__text {
         position: relative;
         z-index: 1;
-        max-width: 270px;
     }
 
     .title--h1 {
