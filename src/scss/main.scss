@@ -10,8 +10,9 @@
 // тестовые стили, удалите их
 .main {
   overflow-x: hidden;
-  flex: 1 0 auto;
-  height: 100%;
+  flex: 1 1 auto;
+  // height: 100%;
+  min-width: 100%;
 }
 
 @import "mobile";

@@ -60,7 +60,7 @@
 
         &-left {
             width: 55%;
-            padding: 0 60px 0 140px;
+            padding: 0 60px 0 60px;
         }
 
         &__text {
@@ -143,10 +143,15 @@
         }
     
         &-form {
+
             &__item {
                 input {
                     width: 285px;
                 }
+            }
+
+            &__button {
+                width: 285px;
             }
         }
     }
