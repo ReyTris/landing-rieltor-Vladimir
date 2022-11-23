@@ -125,12 +125,11 @@ p {
 
 .dis-scroll {
   position: fixed;
-  left: 0;
-  top: 0;
+  // left: 0;
   overflow: hidden;
   width: 100%;
   height: 100vh;
-  overscroll-behavior: none;
+  // overscroll-behavior: none;
 }
 
 .page--ios .dis-scroll {

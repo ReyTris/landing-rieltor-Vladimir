@@ -41,15 +41,15 @@
                 }
             }
         }
+
+        &-mobile {
+            top: 60px;
+        }
     }
     
     .first-block {
-        // height: calc(322px + (631 - 322) * ((100vw - 768px) / (1024 - 768)));
+        margin-top: 60px;
 
-        &__text {
-            max-width: 390px;
-        }
-    
         .title--h1 {
             margin: 0 0 20px;
             font-size: 30px;
@@ -70,6 +70,10 @@
         &-right {
             width: 55%;
         }
+
+        &__description {
+            font-size: 16px;
+        }
     }
 
     .services {
@@ -78,13 +82,14 @@
         }
 
         .title--h2 {
-            font-size: 16px;
+            font-size: 20px;
             margin-bottom: 15px;
+            text-align: left;
         }
 
         .services-list {
             .services-list__item {
-                font-size: 14px;
+                font-size: 16px;
                 margin-bottom: 5px;
             }
         }
@@ -95,7 +100,7 @@
         padding-bottom: 65px;
 
         .title--h2 {
-            font-size: 16px;
+            font-size: 24px;
             margin-bottom: 28px;
         }
     
@@ -121,17 +126,15 @@
         padding: 44px 30px;
     
         .title--h2 {
-            font-size: 16px;
-            margin-bottom: 18px;
+            font-size: 24px;
+            margin-bottom: 28px;
         }
     
         &__list {
-            width: 580px;
             margin-bottom: 44px;
         }
     
         &-item {
-            width: 240px;
             margin-bottom: 40px;
 
             &__info {
@@ -139,13 +142,13 @@
             }
     
             &__name {
-                font-size: 14px;
+                font-size: 20px;
                 font-weight: 400;
                 margin-right: 10px;
             }
     
             &__text {
-                font-size: 12px;
+                font-size: 16px;
                 line-height: 1.2;
             }
 

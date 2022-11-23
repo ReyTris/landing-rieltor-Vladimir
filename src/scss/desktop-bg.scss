@@ -5,8 +5,6 @@
 
     .header {
         &__info {
-            margin-left: auto;
-
             .social-list {
                 margin-left: -30px;
     
@@ -23,21 +21,20 @@
         
         .nav {
             display: block;
-            margin-left: 122px;
 
             &__menu {
                 display: flex;
+            }
     
-                .nav__item {
-                    margin-right: 50px;
-    
-                    a {
-                        font-size: 20px;
-                    }
-    
-                    &:last-of-type {
-                        margin-right: 0;
-                    }
+            &__item {
+                margin-right: 50px;
+
+                a {
+                    font-size: 24px;
+                }
+
+                &:last-of-type {
+                    margin-right: 0;
                 }
             }
         }

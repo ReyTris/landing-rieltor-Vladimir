@@ -5,8 +5,8 @@
 
     .header {
 
+        padding: 40px 25px;
         &__wrapper {
-            padding: 40px 25px;
         }
         .person {
             &__name {
@@ -33,6 +33,7 @@
     .first-block {
         height: calc(322px + (631 - 322) * ((100vw - 768px) / (1024 - 768)));
         padding: 0 26px;
+        margin-top: 127px;
 
         &__text {
             max-width: 100%;
@@ -71,6 +72,8 @@
     }
 
     .services {
+        min-height: 590px;
+
         &__text {
             max-width: 750px;
         }
@@ -125,6 +128,11 @@
         .title--h2 {
             font-size: 36px;
             margin-bottom: 84px;
+        }
+
+        &__image {
+            width: 365px;
+            height: 365px;
         }
     
         &__list {
