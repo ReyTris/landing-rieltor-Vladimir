@@ -17,27 +17,28 @@
         &__info {
             display: flex;
             align-items: center;
-            .header__phone {
-                display: block;
-                margin-right: 20px;
-
-                a {
-                    color: #000;
-                    text-decoration: underline;
-                    text-decoration-color: transparent;
-                    transition: text-decoration-color 0.3s;
-        
-                    &:hover {
-                        text-decoration-color: #000;
-                    }
-                }
-            }
     
             .social-list {
                 margin-left: -20px;
     
                 .social-link {
                     margin-left: 20px;
+                }
+            }
+        }
+
+        &__phone {
+            // display: block;
+            // margin-right: 20px;
+
+            a {
+                color: #000;
+                text-decoration: underline;
+                text-decoration-color: transparent;
+                transition: text-decoration-color 0.3s;
+    
+                &:hover {
+                    text-decoration-color: #000;
                 }
             }
         }
@@ -87,8 +88,8 @@
             text-align: left;
         }
 
-        .services-list {
-            .services-list__item {
+        &-list {
+            &__item {
                 font-size: 16px;
                 margin-bottom: 5px;
             }
@@ -109,14 +110,25 @@
                 height: 123px;
                 width: 112px;
 
-                svg {
-                    width: 60px;
-                    height: 60px;
+                &:first-of-type {
+                    .partners-list__image {
+                        img {
+                            width: 130px;
+                            height: 130px;
+                        } 
+                    }
                 }
     
-                img {
-                    width: 60px;
-                    height: 60px;
+                &:last-of-type {
+                    .partners-list__image {
+                        margin-top: -40px;
+                        margin-left: -10px;
+    
+                        img {
+                            width: 140px;
+                            height: 140px;
+                        } 
+                    }
                 }
             }
         }

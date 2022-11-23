@@ -7,7 +7,8 @@ import vars from './_vars';
 const App= {
     init() {
         this.burgerMenu(),
-        this.scrollToBlock()
+        this.scrollToBlock(),
+        this.swiperPartners()
     },
 
     burgerMenu() {
@@ -98,6 +99,20 @@ const App= {
                 }, 600)
             })
         })
+    },
+
+    swiperPartners() {
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            centeredSlides: true,
+            spaceBetween: 10,
+            initialSlide: 2,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
     }
 }
 

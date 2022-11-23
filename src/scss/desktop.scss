@@ -4,13 +4,35 @@
     }
 
     .header {
+        padding: 40px 40px;
 
-        padding: 40px 25px;
-        &__wrapper {
+        &-burger {
+            display: none;
         }
+
         .person {
             &__name {
                 font-size: 20px;
+            }
+        }
+
+        .nav {
+            display: block;
+
+            &__menu {
+                display: flex;
+            }
+    
+            &__item {
+                margin-right: 50px;
+
+                a {
+                    font-size: 20px;
+                }
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
             }
         }
     
@@ -32,7 +54,7 @@
     
     .first-block {
         height: calc(322px + (631 - 322) * ((100vw - 768px) / (1024 - 768)));
-        padding: 0 26px;
+        padding: 0 40px;
         margin-top: 127px;
 
         &__text {
@@ -109,14 +131,39 @@
                 width: 183px;
                 margin-right: 8px;
 
-                svg {
-                    width: 120px;
-                    height: 120px;
+                &:first-of-type {
+                    .partners-list__image {
+                        img {
+                            width: 250px;
+                            height: 250px;
+                        } 
+                    }
+                }
+    
+                &:nth-of-type(3) {
+                    .partners-list__image {
+                        img {
+                            width: 160px;
+                            height: 160px;
+                        } 
+                    }
+                }
+    
+                &:last-of-type {
+                    .partners-list__image {
+                        margin-top: -60px;
+                        margin-left: -10px;
+    
+                        img {
+                            width: 200px;
+                            height: 200px;
+                        } 
+                    }
                 }
     
                 img {
-                    width: 120px;
-                    height: 120px;
+                    width: 140px;
+                    height: 140px;
                 }
             }
         }

@@ -9,22 +9,15 @@ html {
 }
 
 .page {
-  // height: 100%;
   font-family: var(--font-family, sans-serif);
   -webkit-text-size-adjust: 100%;
 }
 
 .page__body {
-  // display: flex;
-  // flex-direction: column;
   margin: 0;
   padding: 0;
   outline: none;
   box-sizing: border-box;
-  // min-width: 320px;
-  // min-height: 100%;
-  // font-size: 16px;
-  // line-height: 1;
 }
 
 .page-wrapper {
@@ -34,7 +27,6 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  // min-width: 320px;
 }
 
 img {
@@ -135,3 +127,4 @@ p {
 .page--ios .dis-scroll {
   position: relative;
 }
+
