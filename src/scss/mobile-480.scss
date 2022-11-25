@@ -129,8 +129,6 @@
     }
 
     .reviews {
-        padding: 33px 23px;
-    
         .title--h2 {
             margin-bottom: 20px;
         }
@@ -141,23 +139,14 @@
         }
     
         &__list {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: flex-start;
             justify-content: space-between;
-            // width: 440px;
             margin: 0 auto; 
             margin-bottom: 30px;
         }
     
         &-item {
-            width: calc(50% - 40px);
             margin-bottom: 30px;
-
-            &:nth-of-type(n+2) {
-                margin-bottom: 0;
-            }
+            padding: 20px;
     
             &__info {
                 margin-bottom: 5px;

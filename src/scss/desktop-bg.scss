@@ -39,6 +39,12 @@
                 }
             }
         }
+
+        @media (min-width: 1500px) {
+            .nav {
+                margin-left: -140px;
+            }
+        }
     }
     
     .first-block {
@@ -135,20 +141,14 @@
     }
     
     .reviews {
+
+        padding: 80px 0;
         .container {
             padding: 0 60px;
         }
-
-        padding: 80px 0;
-    
-        .title--h2 {
-            font-size: 36px;
-            margin-bottom: 84px;
-        }
     
         &-item {
-            width: 484px;
-            margin-bottom: 60px;
+            width: calc(50% - 40px);
         }
     }
 

@@ -24,7 +24,7 @@
             }
     
             &__item {
-                margin-right: 50px;
+                margin-right: 45px;
 
                 a {
                     font-size: 20px;
@@ -188,7 +188,7 @@
         }
     
         &-item {
-            width: 450px;
+            width: calc(50% - 20px);
             margin-bottom: 60px;
 
             &__info {
@@ -198,7 +198,7 @@
             &__name {
                 font-size: 26px;
                 font-weight: 400;
-                margin-right: 15px;
+                margin-right: 16px;
             }
     
             &__text {

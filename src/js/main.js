@@ -108,6 +108,7 @@ const App= {
             centeredSlides: true,
             spaceBetween: 10,
             initialSlide: 2,
+            loop: true,
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
