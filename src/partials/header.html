@@ -1,5 +1,7 @@
 <header class="header">
-  <div class="container">
+    <div class="header-burger" data-burger>
+      <span class="header-burger__line"></span>
+    </div>
     <div class="header__wrapper">
       <div class="person">
         <div class="person__name">
@@ -12,17 +14,22 @@
       <nav class="nav">
         <ul class="nav__menu">
           <li class="nav__item">
-            <a href="" class="nav__link" title="Услуги">
+            <a href="#" class="nav__link" title="Обо мне" data-value="about">
+              Обо мне 
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link" title="Услуги" data-value="services">
               Услуги
             </a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link" title="Отзывы">
+            <a href="#" class="nav__link" title="Отзывы" data-value="reviews">
               Отзывы
             </a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link" title="Контакты">
+            <a href="#" class="nav__link" title="Контакты" data-value="contacts">
               Контакты
             </a>
           </li>
@@ -35,5 +42,40 @@
         @include('social.html')
       </div>
     </div>
-  </div>
+    <div class="header-mobile" data-menu>
+      <div class="header-mobile__wrapper">
+        <nav class="nav">
+          <ul class="nav__menu">
+            <li class="nav__item">
+              <a href="#" class="nav__link" title="Обо мне" data-menu-item data-value="about">
+                Обо мне
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link" title="Услуги" data-menu-item data-value="services">
+                Услуги
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link" title="Отзывы" data-menu-item data-value="reviews">
+                Отзывы
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link" title="Контакты" data-menu-item data-value="contacts">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__info">
+          <div class="header__phone">
+            <a href="tel:+79969538874">+7 996 953 88 74</a>
+          </div>
+          <div class="header__email">
+            <a href="mailto:volokhov.dynasty@gmail.com">volokhov.dynasty@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
 </header>

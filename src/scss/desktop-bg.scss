@@ -5,8 +5,6 @@
 
     .header {
         &__info {
-            margin-left: auto;
-
             .social-list {
                 margin-left: -30px;
     
@@ -18,27 +16,166 @@
         }
 
         &__phone {
-            margin-right: 30px;
+            // margin-right: 30px;
+            display: none;
         }
         
         .nav {
             display: block;
-            margin-left: 122px;
 
             &__menu {
                 display: flex;
+            }
     
-                .nav__item {
-                    margin-right: 50px;
+            &__item {
+                margin-right: 50px;
+
+                a {
+                    font-size: 24px;
+                }
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
     
-                    a {
-                        font-size: 20px;
-                    }
+    .first-block {
+        max-height: calc(100vh - 121px);
+
+        &__text {
+            max-width: 987px;
+        }
+    }
     
-                    &:last-of-type {
-                        margin-right: 0;
+    .about { 
+        min-height: 780px;
+        height: calc(100vh - 100px);
+
+        &-right {
+            width: 45%;
+        }
+
+        &-left {
+            width: 55%;
+            padding: 0 60px 0 60px;
+        }
+
+        &__text {
+            // max-width: 100%;
+        }
+
+        .title--h2 {
+            font-size: 36px;
+            margin-bottom: 24px;
+        }
+    
+        &__description {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    .services {
+        max-height: 590px;
+    }
+
+    .partners {
+        padding-top: 130px;
+        padding-bottom: 130px;
+
+        .title--h2 {
+            font-size: 40px;
+            margin-bottom: 68px;
+        }
+    
+        .partners-list {
+            &__item {
+                height: 276px;
+                width: 224px;
+                margin-right: 8px;
+
+                &:first-of-type {
+                    .partners-list__image {
+                        img {
+                            width: 320px;
+                            height: 320px;
+                        } 
                     }
                 }
+    
+                &:nth-of-type(3) {
+                    .partners-list__image {
+                        img {
+                            width: 160px;
+                            height: 160px;
+                        } 
+                    }
+                }
+    
+                &:last-of-type {
+                    .partners-list__image {
+                        margin-top: -100px;
+                        margin-left: -10px;
+    
+                        img {
+                            width: 300px;
+                            height: 300px;
+                        } 
+                    }
+                }
+    
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+    
+    .reviews {
+        .container {
+            padding: 0 60px;
+        }
+
+        padding: 80px 0;
+    
+        .title--h2 {
+            font-size: 36px;
+            margin-bottom: 84px;
+        }
+    
+        &-item {
+            width: 484px;
+            margin-bottom: 60px;
+        }
+    }
+
+    .feedback {
+        &__text {
+            margin-bottom: 44px;
+        }
+    
+        .title--h2 {
+            font-size: 40px;
+            margin-bottom: 24px;
+        }
+    
+        &__description {
+            font-size: 26px;
+        }
+    
+        &-form {
+
+            &__item {
+                input {
+                    width: 285px;
+                }
+            }
+
+            &__button {
+                width: 285px;
             }
         }
     }

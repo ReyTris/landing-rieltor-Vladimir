@@ -2,12 +2,260 @@
 <html lang="ru" class="page">
 
   @include('partials/head.html')
-  
-  <body class="page__body">
-      @include('partials/header.html')
-      <main class="main">
 
+  <body class="page__body">
+    <div class="page-wrapper">
+      
+    @include('partials/header.html')
+      <main class="main">
+        <section class="first-block">
+          <picture class="first-block__image">
+            <img src="./img/first-bg.webp" alt="основная картинка">
+          </picture>
+          <div class="first-block__text">
+            <h1 class="title title--h1">Ипотечный брокер </h1>
+            <p class="first-block__description">
+              Одобрение ипотеки.
+              <br>
+              Помощь в&nbsp;получении ипотечного кредита, даже если нет официального трудоустройства, были сложности с&nbsp;кредитной историей или высокая кредитная нагрузка.
+            </p>
+          </div>
+        </section>
+
+        <section class="about" data-target="about">
+          <div class="about-left">
+            <div class="about__text">
+              <h2 class="title--h2">
+                Обо мне
+              </h2>
+              <div class="about__description">
+                Меня зовут Иван, я&nbsp;эксперт ипотечного кредитования.
+                <br>
+                Я&nbsp;профессионально занимаюсь тем, что помогаю взять ипотечный кредит, даже
+                в&nbsp;сложных случаях.
+                <br> 
+                За&nbsp;спиной у&nbsp;меня более 50&nbsp;довольных клиентов. Обращайтесь прямо сейчас
+                и&nbsp;я&nbsp;решу ваш вопрос!                
+              </div>
+            </div>
+          </div>
+          <div class="about-right">
+            <picture class="about-right__image">
+              <img src="./img/about.webp" alt="Волохов Иван Александрович">
+            </picture>
+          </div>
+          <picture class="about__image">
+            <img src="./img/house.webp" alt="Волохов Иван Александрович">
+          </picture>
+        </section>
+
+        <section class="services" data-target="services">
+          <picture class="services__image">
+            <img src="./img/services.webp" alt="Визитка">
+          </picture>
+          <div class="services__text">
+            <h1 class="title title--h2">Предоставляю услуги по одобрению ипотеки для клиентов:</h1>
+            <ul class="services-list">
+              <li class="services-list__item">
+                которым приходят отказы по ипотеке
+              </li>
+              <li class="services-list__item">
+                у которых плохая кредитная истории
+              </li>
+              <li class="services-list__item">
+                у которых нет официального дохода или доход слишком низкий
+              </li>
+              <li class="services-list__item">
+                которые хотят ипотеку на сложных условиях.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="partners">
+          <h2 class="title title--h2">
+            Банки-партнёры
+          </h2>
+          <img class="bg-partners" src="./img/partners/bg-partners.webp" alt="Партнеры">
+          <div class="partners-list">
+            <div class="partners-list__item">
+              <div class="partners-list__image">
+                <img src="./img/partners/1.webp" alt="россбанк">
+              </div>
+            </div>
+            <div class="partners-list__item">
+              <div class="partners-list__image">
+                <img src="./img/partners/2.webp" alt="россбанк">
+              </div>
+            </div>
+            <div class="partners-list__item">
+              <div class="partners-list__image">
+                <img src="./img/partners/3.webp" alt="втб">
+              </div>
+            </div>
+            <div class="partners-list__item">
+              <div class="partners-list__image">
+                <img src="./img/partners/4.webp" alt="открытие">
+              </div>
+            </div>
+            <div class="partners-list__item">
+              <div class="partners-list__image">
+                <img src="./img/partners/5.webp" alt="банк">
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="partners-list__item">
+                  <div class="partners-list__image">
+                    <img src="./img/partners/1.webp" alt="россбанк">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="partners-list__item">
+                  <div class="partners-list__image">
+                    <img src="./img/partners/2.webp" alt="россбанк">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="partners-list__item">
+                  <div class="partners-list__image">
+                    <img src="./img/partners/3.webp" alt="россбанк">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="partners-list__item">
+                  <div class="partners-list__image">
+                    <img src="./img/partners/4.webp" alt="россбанк">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="partners-list__item">
+                  <div class="partners-list__image">
+                    <img src="./img/partners/5.webp" alt="россбанк">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+
+        <section class="reviews" data-target="reviews">
+          <div class="container">
+            <h2 class="title title--h2">
+              Отзывы клиентов
+            </h2>
+            <div class="reviews__image">
+              <svg width="116" height="113" viewBox="0 0 116 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M108.403 70.7129L92.7828 60.806L98.797 50.1182C100.248 47.4495 101.008 44.4791 101.011 41.4626V24.5196C101.024 19.7555 99.6001 15.0918 96.916 11.101C94.2318 7.1102 90.4038 3.96611 85.902 2.05479C81.4001 0.143477 76.4205 -0.451854 71.5745 0.341903C66.7285 1.13566 62.2271 3.28395 58.623 6.52297L63.9026 12.0476C66.3999 9.80938 69.5167 8.32618 72.8708 7.77982C76.2249 7.23347 79.6706 7.6477 82.7854 8.97174C85.9002 10.2958 88.5488 12.4721 90.4064 15.2338C92.264 17.9955 93.2498 21.2227 93.2431 24.5196V41.4626C93.2423 43.2191 92.8083 44.9499 91.9771 46.5107L82.5298 63.3004L104.15 77.0134C105.577 77.9188 106.748 79.1555 107.557 80.6112C108.365 82.0669 108.786 83.6954 108.78 85.3487V97.9395H91.301V105.47H116.548V85.3485C116.556 82.4443 115.815 79.5843 114.393 77.0283C112.97 74.4723 110.911 72.3014 108.403 70.7129Z" fill="black" fill-opacity="0.2"/>
+                <path d="M73.4455 78.2431L57.8254 68.3362L63.8394 57.6484C65.2899 54.9797 66.0499 52.0093 66.0539 48.9928V32.0498C66.0488 25.5555 63.3865 19.3283 58.651 14.7343C53.9155 10.1404 47.4934 7.55483 40.7937 7.54492C26.8793 7.54492 15.5593 18.5379 15.5593 32.0498V48.9928C15.5445 52.0079 16.2962 54.9801 17.7478 57.6467L23.7946 68.3924L8.26532 78.2431C5.76004 79.8291 3.70298 81.9964 2.28081 84.5483C0.858635 87.1003 0.116373 89.9561 0.121381 92.8565L0 113H81.5906V92.8787C81.5984 89.9745 80.8575 87.1145 79.435 84.5585C78.0125 82.0025 75.9536 79.8316 73.4455 78.2431ZM73.8222 105.47H7.81354L7.8888 92.8787C7.88293 91.2253 8.30342 89.5968 9.11205 88.1411C9.92069 86.6854 11.0918 85.4487 12.519 84.5434L34.0476 70.888L24.5675 54.0409C23.7457 52.4779 23.3206 50.7472 23.3277 48.9928V32.0498C23.3277 27.5562 25.1693 23.2467 28.4472 20.0692C31.7251 16.8918 36.1709 15.1067 40.8066 15.1067C45.4423 15.1067 49.8881 16.8918 53.166 20.0692C56.444 23.2467 58.2855 27.5562 58.2855 32.0498V48.9928C58.2847 50.7493 57.8506 52.4801 57.0195 54.0409L47.5721 70.8306L69.192 84.5436C70.6192 85.449 71.7903 86.6857 72.5989 88.1414C73.4076 89.5971 73.8281 91.2256 73.8222 92.8789V105.47Z" fill="black" fill-opacity="0.2"/>
+              </svg>
+            </div>
+            <div class="reviews__list">
+              <div class="reviews-item">
+                <div class="reviews-item__info">
+                  <div class="reviews-item__name">
+                    Людмила В.
+                  </div>
+                  <div class="reviews-item__rating">
+                    <span>5</span>
+                    @include('partials/stars.html')
+                  </div>
+                </div>
+                <div class="reviews-item__text">
+                  Обратилась к&nbsp;Ивану за&nbsp;одобрением ипотеки. Хотела купить студию в&nbsp;новостройке, Иван очень оперативно выполнил свою работу. Без проблем за&nbsp;пару дней вышли на&nbsp;сделку, которая прошла успешно. Буду рекомендовать Ивана своим знакомым! Отличный специалист!
+                </div>
+              </div>
+              <div class="reviews-item">
+                <div class="reviews-item__info">
+                  <div class="reviews-item__name">
+                    Екатерина П.
+                  </div>
+                  <div class="reviews-item__rating">
+                    <span>5</span>
+                    @include('partials/stars.html')
+                  </div>
+                </div>
+                <div class="reviews-item__text">
+                  Иван, просто супер ! Помощь на&nbsp;высшем уровне ! Все прошло максимально быстро, буквально за&nbsp;неделю! Советую всем, кто готов оформить ипотеку за&nbsp;неделю!
+                </div>
+              </div>
+              <div class="reviews-item">
+                <div class="reviews-item__info">
+                  <div class="reviews-item__name">
+                    Анастасия В.
+                  </div>
+                  <div class="reviews-item__rating">
+                    <span>5</span>
+                    @include('partials/stars.html')
+                  </div>
+                </div>
+                <div class="reviews-item__text">
+                  Огромное спасибо Ивану за&nbsp;одобрение ипотеки и&nbsp;сопровождение! Долго снимали с&nbsp;супругом жильё, а&nbsp;теперь сможем жить в&nbsp;своей квартире! Иван грамотно всё объяснил, рассказал, как нужно действовать, помог на&nbsp;всех этапах! Теперь буду рекомендовать вас всем своим знакомым!
+                </div>
+              </div>
+              <div class="reviews-item">
+                <div class="reviews-item__info">
+                  <div class="reviews-item__name">
+                    Ирина А.
+                  </div>
+                  <div class="reviews-item__rating">
+                    <span>5</span>
+                    @include('partials/stars.html')
+                  </div>
+                </div>
+                <div class="reviews-item__text">
+                  Большое спасибо Ивану за&nbsp;помощь в&nbsp;оформлении ипотеки, а&nbsp;также за&nbsp;дальнейшее сопровождение сделки. Грамотная консультация во&nbsp;время работы. Решение всех вопросов оперативно. Всегда на&nbsp;позитиве не&nbsp;смотря на&nbsp;возникающие трудности. Удачи Вам в&nbsp;дальнейшей работе.
+                </div>
+              </div>
+            </div>
+            <div class="reviews__link">
+              <a href="https://agencies.domclick.ru/agent/16739850" target="_blank">
+                Ко всем отзывам
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="feedback">
+          <picture class="feedback__image">
+            <img src="./img/feedback.webp" alt="Обратная связь">
+          </picture>
+          <div class="feedback__text">
+            <h2 class="title title--h2">Форма для обратной связи</h2>
+            <p class="feedback__description">
+              Есть запрос? Оставьте свои контактные данные, и&nbsp;я&nbsp;свяжусь с&nbsp;вами.
+            </p>
+          </div>
+          <form class="feedback-form">
+            <div class="feedback-form__wrapper">
+              <div class="feedback-form__item">
+                <label for="name"></label>
+                <input id="name" type="text" placeholder="Имя" required>
+              </div>
+              <div class="feedback-form__item">
+                <label for="phone"></label>
+                <input id="phone" type="tel" placeholder="Телефон" required>
+              </div>
+              <div class="feedback-form__item">
+                <label for="email"></label>
+                <input id="email" type="email" placeholder="Эл. почта">
+              </div>
+              <button class="feedback-form__button">
+                Отправить
+              </button> 
+            </div>
+          </form>
+        </section>
       </main>
-      @include('partials/footer.html')
+    @include('partials/footer.html')
+    </div>
   </body>
 </html>

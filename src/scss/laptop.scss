@@ -17,21 +17,6 @@
         &__info {
             display: flex;
             align-items: center;
-            .header__phone {
-                display: block;
-                margin-right: 20px;
-
-                a {
-                    color: #000;
-                    text-decoration: underline;
-                    text-decoration-color: transparent;
-                    transition: text-decoration-color 0.3s;
-        
-                    &:hover {
-                        text-decoration-color: #000;
-                    }
-                }
-            }
     
             .social-list {
                 margin-left: -20px;
@@ -39,6 +24,192 @@
                 .social-link {
                     margin-left: 20px;
                 }
+            }
+        }
+
+        &__phone {
+            // display: block;
+            // margin-right: 20px;
+
+            a {
+                color: #000;
+                text-decoration: underline;
+                text-decoration-color: transparent;
+                transition: text-decoration-color 0.3s;
+    
+                &:hover {
+                    text-decoration-color: #000;
+                }
+            }
+        }
+
+        &-mobile {
+            top: 60px;
+        }
+    }
+    
+    .first-block {
+        margin-top: 60px;
+
+        .title--h1 {
+            margin: 0 0 20px;
+            font-size: 30px;
+        }
+    
+        &__description {
+            font-size: 24px;
+        }
+    }
+
+    .about { 
+        min-height: 449px;
+        
+        &-left {
+            width: 45%;
+        }
+
+        &-right {
+            width: 55%;
+        }
+
+        &__description {
+            font-size: 16px;
+        }
+    }
+
+    .services {
+        &__text {
+            max-width: 370px;
+        }
+
+        .title--h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        &-list {
+            &__item {
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .partners {
+        padding-top: 44px;
+        padding-bottom: 65px;
+
+        .title--h2 {
+            font-size: 24px;
+            margin-bottom: 28px;
+        }
+    
+        .partners-list {
+            &__item {
+                height: 123px;
+                width: 112px;
+
+                &:first-of-type {
+                    .partners-list__image {
+                        img {
+                            width: 130px;
+                            height: 130px;
+                        } 
+                    }
+                }
+    
+                &:last-of-type {
+                    .partners-list__image {
+                        margin-top: -40px;
+                        margin-left: -10px;
+    
+                        img {
+                            width: 140px;
+                            height: 140px;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+
+    .reviews {
+        padding: 44px 30px;
+    
+        .title--h2 {
+            font-size: 24px;
+            margin-bottom: 28px;
+        }
+    
+        &__list {
+            margin-bottom: 44px;
+        }
+    
+        &-item {
+            margin-bottom: 40px;
+
+            &__info {
+                margin-bottom: 11px;
+            }
+    
+            &__name {
+                font-size: 20px;
+                font-weight: 400;
+                margin-right: 10px;
+            }
+    
+            &__text {
+                font-size: 16px;
+                line-height: 1.2;
+            }
+
+            &__stars {
+                margin-top: -3px;
+                svg {
+                    width: 13px;
+                    height: 13px;
+                }
+            }
+        }
+
+        &__link {
+            a {
+                padding: 11px 13px 9px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .feedback {
+        min-height: 326px;
+
+        &__text {
+            margin-bottom: 17px;
+            max-width: 100%;
+        }
+    
+        .title--h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    
+        &__description {
+            font-size: 14px;
+        }
+    
+        &-form {
+    
+            &__item {
+                margin-right: 16px;
+    
+                input {
+                    width: 110px;
+                }
+            }
+
+            &__button {
+                width: 110px;
             }
         }
     }
