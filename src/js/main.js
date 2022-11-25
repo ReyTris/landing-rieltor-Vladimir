@@ -49,12 +49,13 @@ const App= {
             this.enableScroll();
             });
         });
-
-        // $( window ).resize(function() {
-        //     if ($(window).innerWidth > 1000) {
-        //         menu.classList.remove('header-mobile--active');
-        //     }
-        // });
+        
+        $( window ).on('resize', function() {
+            if ($(window).width() > 1024) {
+                menu.classList.remove('header-mobile--active');
+                burger.classList.remove('header-burger--active');
+            }
+        });
     },
 
     disableScroll() {

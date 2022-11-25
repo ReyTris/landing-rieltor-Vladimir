@@ -78,8 +78,7 @@
         }
     
         &__description {
-            font-size: 20px;
-            line-height: 30px;
+            font-size: 28px;
         }
     }
 
@@ -93,7 +92,7 @@
 
         .title--h2 {
             font-size: 40px;
-            margin-bottom: 68px;
+            margin-bottom: 60px;
         }
     
         .partners-list {
@@ -141,10 +140,9 @@
     }
     
     .reviews {
-
         padding: 80px 0;
         .container {
-            padding: 0 60px;
+            // padding: 0 60px;
         }
     
         &-item {
